@@ -9,7 +9,6 @@ describe("mpl-corenft-pnft-staking", () => {
   const program = anchor.workspace.MplCorenftPnftStaking as Program<MplCorenftPnftStaking>;
 
   it("Is initialized!", async () => {
-    // Add your test here.
     const tx = await program.methods.initialize().rpc();
     console.log("Your transaction signature", tx);
   });
